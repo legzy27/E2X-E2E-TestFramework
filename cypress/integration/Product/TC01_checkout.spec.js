@@ -17,10 +17,10 @@ describe("ProductPage", function () {
         cy.get('input#add-to-cart-button').click()
         cy.get('#hlb-ptc-btn').click()
         //Add new email 
-        cy.get('input#ap_email').type('niyo4real2002@yahoo.com')
+        cy.get('input#ap_email').type('')
         cy.get('#continue').click()
         //Add new password
-        cy.get('input#ap_password').type('Allstar27')
+        cy.get('input#ap_password').type('')
         cy.get('#signInSubmit').click()
         cy.wait(3000)
         cy.get('.a-button-input').click({ multiple: true, force: true })
