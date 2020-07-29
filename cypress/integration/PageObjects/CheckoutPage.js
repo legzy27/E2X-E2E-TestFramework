@@ -27,7 +27,7 @@ class CheckoutPage {
       return  cy.get('#hlb-ptc-btn').click()
 
      }
-     //input your email
+     //input your email inside the empty quote
       enterEmail(){
           return cy.get('input#ap_email').type('')
 
@@ -35,7 +35,7 @@ class CheckoutPage {
       clickContinue(){
           return cy.get('#continue').click()
       }
-      //input your password
+      //input your password inside the empty quote
       enterPassword(){
        return cy.get('input#ap_password').type('')
 
