@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-29T08:59:16.715Z",
+    "end": "2020-07-29T08:59:40.682Z",
+    "duration": 23967,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60a59f70-16e2-4933-93db-ec2cd710a261",
+      "title": "",
+      "fullFile": "cypress/integration/Product/TC01_checkout.spec.js",
+      "file": "cypress/integration/Product/TC01_checkout.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "96b58365-89c0-4921-9ccf-8383242f8bd5",
+          "title": "ProductPage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to Product Page",
+              "fullTitle": "ProductPage Navigate to Product Page",
+              "timedOut": null,
+              "duration": 1471,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.co.uk/');",
+              "err": {},
+              "uuid": "697c4b97-611c-42ca-b091-1e90a1d0f2ee",
+              "parentUUID": "96b58365-89c0-4921-9ccf-8383242f8bd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search For A Product(Speaker)",
+              "fullTitle": "ProductPage Search For A Product(Speaker)",
+              "timedOut": null,
+              "duration": 5134,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input#twotabsearchtextbox').type('speaker');\ncy.wait(3000);\ncy.get('div.nav-search-submit.nav-sprite').click();",
+              "err": {},
+              "uuid": "1bb57a22-7b18-431f-b796-3b7717ea634e",
+              "parentUUID": "96b58365-89c0-4921-9ccf-8383242f8bd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add Product(Speaker) To Cart",
+              "fullTitle": "ProductPage Add Product(Speaker) To Cart",
+              "timedOut": null,
+              "duration": 17165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(1000);\ncy.contains('LG XBOOM Go PL2 Bluetooth Speaker PL2.DGBRLLK').should('be.visible').click();\ncy.get('input#add-to-cart-button').click();\ncy.get('#hlb-ptc-btn').click(); //Add new email \ncy.get('input#ap_email').type('niyo4real2002@yahoo.com');\ncy.get('#continue').click(); //Add new password\ncy.get('input#ap_password').type('Allstar27');\ncy.get('#signInSubmit').click();\ncy.wait(3000);\ncy.get('.a-button-input').click({\n  multiple: true,\n  force: true\n});\ncy.wait(1000);",
+              "err": {},
+              "uuid": "002bcc2b-9415-48b0-88df-bb9e773b4f14",
+              "parentUUID": "96b58365-89c0-4921-9ccf-8383242f8bd5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "697c4b97-611c-42ca-b091-1e90a1d0f2ee",
+            "1bb57a22-7b18-431f-b796-3b7717ea634e",
+            "002bcc2b-9415-48b0-88df-bb9e773b4f14"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23770,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

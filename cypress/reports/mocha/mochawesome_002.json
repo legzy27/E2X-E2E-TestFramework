@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-29T08:59:44.666Z",
+    "end": "2020-07-29T08:59:46.090Z",
+    "duration": 1424,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3b36539-c74c-422b-9f04-5fa26fb5e1d2",
+      "title": "",
+      "fullFile": "cypress/integration/Product/TC02_pom.spec.js",
+      "file": "cypress/integration/Product/TC02_pom.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "89a63ae0-ac21-4090-9611-45638368614e",
+          "title": "ProductPage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to Product Page",
+              "fullTitle": "ProductPage Navigate to Product Page",
+              "timedOut": null,
+              "duration": 1319,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "product.visit();",
+              "err": {},
+              "uuid": "b7d64b2f-e376-424c-b0bb-b016cc393b7a",
+              "parentUUID": "89a63ae0-ac21-4090-9611-45638368614e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b7d64b2f-e376-424c-b0bb-b016cc393b7a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1319,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

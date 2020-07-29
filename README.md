@@ -6,6 +6,8 @@ E2X Automated Test was developed using `Cypress` End-To-End(E2E) testing framewo
 
 ## Instruction
 * Create an amazon account
+* Go to PageObjects - CheckoutPage
+* Input your email and password in  entermail/enterPassword functions.
 
 
 
