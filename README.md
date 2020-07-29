@@ -21,5 +21,6 @@ E2X Automated Test was developed using `Cypress` End-To-End(E2E) testing framewo
 6. To generate a test report run use the command `npm run test` press enter
 6. To view test report open reports folder, click on mochareports folder, right click assets folder and reveal in finder, click to open report.html file
 
-
+## Note
+* Used a page object model(POM) in the E2E test framework
 
