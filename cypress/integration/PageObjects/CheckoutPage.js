@@ -29,7 +29,7 @@ class CheckoutPage {
      }
      //input your email
       enterEmail(){
-          return cy.get('input#ap_email').type('niyo4real2002@yahoo.com')
+          return cy.get('input#ap_email').type('')
 
       }
       clickContinue(){
@@ -37,7 +37,7 @@ class CheckoutPage {
       }
       //input your password
       enterPassword(){
-       return cy.get('input#ap_password').type('Allstar27')
+       return cy.get('input#ap_password').type('')
 
       }
      clickSubmitButton(){
