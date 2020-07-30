@@ -16,10 +16,10 @@ describe("ProductPage", function () {
         .click()
         cy.get('input#add-to-cart-button').click()
         cy.get('#hlb-ptc-btn').click()
-        //Add new email 
+        //Enter your amazon email inside the empty quote
         cy.get('input#ap_email').type('')
         cy.get('#continue').click()
-        //Add new password
+        //Enter your password inside the empty quote
         cy.get('input#ap_password').type('')
         cy.get('#signInSubmit').click()
         cy.wait(3000)
